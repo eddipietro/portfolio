@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
-}
+/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Raleway:wght@400;500;700&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    text-align: center;
+    padding: 20px;
+    background: #f4f4f4;
+    border-bottom: 1px solid #ddd;
 }
 
-.App-link {
-  color: #61dafb;
+main {
+    padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #f4f4f4;
+    border-top: 1px solid #ddd;
 }
+
+.home-content {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('./assets/bn.jpg') no-repeat center;
+    background-size: cover;
+    color: #fff;
+}
+
+.home-content .text-1 {
+    font-size: 27px;
+}
+
+.home-content .text-2 {
+    font-size: 75px;
+    font-weight: 600;
+}
+
+.home-content .text-3 {
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.home-content .text-3 span {
+    color: #6e6e6e;
+    font-weight: 500;
+}
+
+.home-content a {
+    display: inline-block;
+    background: #6e6e6e;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+.home-content a:hover {
+    background: #3883d3;
+}
+
+/* Add additional styles for other sections as needed */
