@@ -1,23 +1,15 @@
 /* App.css */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Raleway:wght@400;500;700&display=swap');
 
-body, html {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
 }
 
-.App-header {
-    text-align: center;
-    padding: 20px;
-    background: #f4f4f4;
-    border-bottom: 1px solid #ddd;
-}
 
-main {
-    padding: 20px;
-}
 
 footer {
     text-align: center;
@@ -25,48 +17,3 @@ footer {
     background: #f4f4f4;
     border-top: 1px solid #ddd;
 }
-
-.home-content {
-    text-align: center;
-    padding: 100px 20px;
-    background: url('./assets/bn.jpg') no-repeat center;
-    background-size: cover;
-    color: #fff;
-}
-
-.home-content .text-1 {
-    font-size: 27px;
-}
-
-.home-content .text-2 {
-    font-size: 75px;
-    font-weight: 600;
-}
-
-.home-content .text-3 {
-    font-size: 40px;
-    margin: 5px 0;
-}
-
-.home-content .text-3 span {
-    color: #6e6e6e;
-    font-weight: 500;
-}
-
-.home-content a {
-    display: inline-block;
-    background: #6e6e6e;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 500;
-    padding: 12px 36px;
-    margin-top: 20px;
-    border-radius: 6px;
-    transition: background 0.3s ease;
-}
-
-.home-content a:hover {
-    background: #3883d3;
-}
-
-/* Add additional styles for other sections as needed */

@@ -1,0 +1,89 @@
+/* Contenedor principal del home */
+.home {
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: space-around; /* Espacio entre imagen y texto */
+    height: 100vh; /* Asegura que ocupe toda la altura del viewport */
+    min-height: 500px; /* Altura mínima para pantallas más pequeñas */
+    background: #f0f0f0; /* Color de fondo neutro para el contenedor */
+    padding: 0 20px; /* Espacio horizontal para el contenedor */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+}
+
+/* Contenido del texto */
+.home-content {
+    max-width: 600px; /* Limita el ancho máximo del contenido */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+/* Ajustes del texto */
+.home-content .text-1 {
+    font-size: 27px;
+}
+
+.home-content .text-2 {
+    font-size: 75px;
+    font-weight: 600;
+}
+
+.home-content .text-3 {
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.home-content .text-3 span {
+    color: #6e6e6e;
+    font-weight: 500;
+}
+
+.home-content a {
+    display: inline-block;
+    background: #6e6e6e;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+.home-content a:hover {
+    background: #3883d3;
+}
+
+/* Contenedor de la imagen */
+/* Contenedor de la imagen */
+.image-container {
+    display: flex;
+    align-items: center; /* Centra verticalmente la imagen dentro de su contenedor */
+    padding: 20px; /* Espacio alrededor de la imagen */
+    background: #fff; /* Fondo blanco para contraste */
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para el efecto de relieve */
+    border: 3px solid #e0e0e0; /* Borde sutil para añadir profundidad */
+}
+
+.image-container img {
+    width: 250px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina espacio extra debajo de la imagen */
+    border-radius: 12px; /* Bordes redondeados en la imagen */
+}
+
+
+/* Ajustes del cursor y el texto de la máquina de escribir */
+.typing-container {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #6e6e6e; /* Cursor de la máquina de escribir */
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    animation: blink 0.75s step-end infinite;
+}
+
+.typing {
+    display: inline;
+    animation: typing 4s steps(40, end) 1s 1 normal both, erasing 4s steps(40, end) 5s 1 normal both;
+}

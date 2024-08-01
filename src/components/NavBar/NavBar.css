@@ -1,0 +1,129 @@
+/* NavBar.css */
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+.navbar.visible {
+    opacity: 1;
+    visibility: visible;
+}
+.navbar.sticky {
+    padding: 15px 0;
+    background: #6e6e6e;
+}
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo img {
+    width: 100px;
+    height: auto;
+}
+.navbar .menu {
+    display: flex;
+    list-style: none;
+}
+.navbar .menu li {
+    display: inline-block;
+}
+.navbar .menu li a {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover {
+    color: #6e6e6e;
+}
+.navbar .menu-btn {
+    color: #3883d3;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+.navbar .menu-btn i.active:before {
+    content: "\f00d";
+}
+
+/* Scroll Up Button */
+.scroll-up-btn {
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: #3883d3;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #ededed;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
+.scroll-up-btn.show {
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.scroll-up-btn:hover {
+    filter: brightness(90%);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar .menu {
+        display: none;
+    }
+    .navbar .menu-btn {
+        display: block;
+    }
+    .navbar.active .menu {
+        display: block;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: #6e6e6e;
+        padding: 10px 0;
+        border-top: 1px solid #fff;
+    }
+    .navbar.active .menu li {
+        width: 100%;
+        text-align: center;
+    }
+    .navbar.active .menu li a {
+        margin-left: 0;
+        display: block;
+        padding: 10px 20px;
+    }
+}
