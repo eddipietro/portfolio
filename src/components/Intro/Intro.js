@@ -35,14 +35,14 @@ const Intro = () => {
     return (
         <section className="home" id="home">
             <div className="home-content">
-                <div className="text-1">Hello, I am</div>
+                <div className="text-1">Hola, me llamo</div>
                 <div className="text-2">Erika Di Pietro</div>
-                <div className="text-3">And I'm a <span className="typing">{text}</span></div>
-                <a href="#about">About Me</a>
+                <div className="text-3">Soy <span className="typing">{text}</span></div>
+                <a href="#about">Sobre Mi</a>
             </div>
-            <div className="image-container">
+            {/* <div className="image-container">
                 <img src={profilePick} alt="Profile" /> 
-            </div>
+            </div> */}
         </section>
     );
 };

@@ -37,10 +37,10 @@ const NavBar = () => {
           </a>
           <ul className={`menu ${menuOpen ? 'active' : ''}`}>
             <li><a href="#home" className="menu-btn">Home</a></li>
-            <li><a href="#about" className="menu-btn">About</a></li>
-            <li><a href="#tech-skills" className="menu-btn">Tech Skills</a></li>
-            <li><a href="#skills-hobbies" className="menu-btn">Skills and Hobbies</a></li>
-            <li><a href="#contact" className="menu-btn">Contact</a></li>
+            <li><a href="#about" className="menu-btn">Sobre Mi</a></li>
+            <li><a href="#skills" className="menu-btn"> Habilidades</a></li>
+            <li><a href="#proyectos" className="menu-tn">Proyectos</a></li>
+            <li><a href="#contact" className="menu-btn">Contacto</a></li>
           </ul>
           <button className="menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
             <FaBars />

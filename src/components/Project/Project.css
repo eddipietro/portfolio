@@ -1,10 +1,39 @@
 .project {
-    width: 45%;
-    margin: 10px 0;
+    width: 20%; /* Mantiene dos proyectos por fila con un margen */
+    margin: 25px 15px; /* Margen superior e inferior para separación vertical */
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .project img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
+}
+
+.project h3 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 16px;
+    color: #6e6e6e;
+    margin-bottom: 15px;
+}
+
+.project a {
+    display: inline-block;
+    color: #3883d3;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.project a:hover {
+    color: #111;
 }

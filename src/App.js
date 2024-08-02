@@ -14,21 +14,16 @@ import './App.css';
 function App() {
     return (
         <div className="App">
-            <NavBar />
+        
+                    <NavBar />
                     <Intro/>
                     <About />
-
-
                     <Skills />
-
-
                     <ProjectList />
-
-
                     <Contact />
 
             <footer>
-                <p>&copy; 2024 Mi Nombre</p>
+                <p>&copy; 2024 Erika Di Pietro</p>
             </footer>
         </div>
     );

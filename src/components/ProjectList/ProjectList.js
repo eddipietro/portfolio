@@ -4,28 +4,41 @@ import './ProjectList.css';
 
 const projects = [
     {
-        title: 'Proyecto 1',
-        imageUrl: 'https://via.placeholder.com/150',
-        description: 'Descripción del Proyecto 1',
-        link: 'http://example.com/proyecto1'
+        title: 'Cayetana ',
+        imageUrl: 'https://i.postimg.cc/j5HXGtN2/android-chrome-512x512.png',
+        description: 'Ecommerce de Bazar',
+        link: 'https://cayetana-bazar-deco.netlify.app/'
     },
     {
-        title: 'Proyecto 2',
-        imageUrl: 'https://via.placeholder.com/150',
-        description: 'Descripción del Proyecto 2',
-        link: 'http://example.com/proyecto2'
+        title: 'DellaPasta',
+        imageUrl: 'https://via.placeholder.com/300',
+        description: 'Ecommerce tienda de Pasta',
+        link: 'https://dellapasta.netlify.app/#/'
     },
-    // Agrega más proyectos según sea necesario
+    {
+        title: 'Proyecto 3',
+        imageUrl: 'https://via.placeholder.com/300',
+        description: 'Descripción del Proyecto 3',
+        link: 'http://example.com/proyecto3'
+    },
+    {
+        title: 'Proyecto 4',
+        imageUrl: 'https://via.placeholder.com/300',
+        description: 'Descripción del Proyecto 4',
+        link: 'http://example.com/proyecto4'
+    }
 ];
 
 const ProjectList = () => {
     return (
-        <section className="projects">
-            <h2>Proyectos</h2>
-            <div className="project-list">
-                {projects.map((project, index) => (
-                    <Project key={index} project={project} />
-                ))}
+        <section className="projects" id="proyectos">
+            <div className="max-width">
+                <h2 className="title">Proyectos</h2>
+                <div className="project-list">
+                    {projects.map((project, index) => (
+                        <Project key={index} project={project} />
+                    ))}
+                </div>
             </div>
         </section>
     );

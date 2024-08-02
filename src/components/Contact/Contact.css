@@ -1,42 +1,121 @@
-.contact {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
+#contact {
+    background: #F0F0F0;
 }
 
-form {
+.max-width {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contact .title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact .contact-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.contact .contact-content .column {
+    flex: 1;
+}
+
+.contact .contact-content .left .text {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.contact .contact-content .left p {
+    font-size: 16px;
+    margin-top: 20px;
+    color: #6e6e6e;
+    line-height: 1.6;
+}
+
+.contact .contact-content .left .icons {
+    margin-top: 20px;
+}
+
+.contact .contact-content .left .icons .row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact .contact-content .left .icons .icon {
+    font-size: 30px;
+    color: #3883d3;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+.contact .contact-content .left .icons .info {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
 }
 
-form div {
-    margin: 10px 0;
+.contact .contact-content .left .icons .info .head {
+    font-size: 16px;
+    font-weight: 500;
+    color: #6e6e6e;
+    margin-top: 5px;
 }
 
-label {
-    margin-bottom: 5px;
+.contact .contact-content .left .icons .info .sub-title {
+    font-size: 16px;
+    color: #3883d3;
 }
 
-input, textarea {
-    width: 100%;
+.contact .contact-content .right form .fields {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.contact .contact-content .right form .field,
+.contact .contact-content .right form .textarea {
+    margin-bottom: 20px;
+}
+
+.contact .contact-content .right form .field input,
+.contact .contact-content .right form .textarea textarea {
+    width: calc(100% - 10px);
     padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.5s ease;
 }
 
-button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 8px;
-    background-color: #4caf50;
-    color: white;
+.contact .contact-content .right form .field input,
+.contact .contact-content .right form .textarea textarea {
+    border-color: #3883d3;
+}
+
+.contact .contact-content .right form .textarea textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contact .contact-content .right form .button-area {
+    margin-top: 20px;
+}
+
+.contact .contact-content .right form .button {
+    background: #3883d3;
+    color: #fff;
+    padding: 12px 36px;
+    border-radius: 6px;
     cursor: pointer;
+    transition: background 0.3s ease;
 }
 
-button:hover {
-    background-color: #45a049;
+.contact .contact-content .right form .button:hover {
+    background: #6e6e6e;
 }

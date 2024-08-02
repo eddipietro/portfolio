@@ -1,8 +1,114 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Common Section Styles */
+section {
+    padding: 100px 0;
+}
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
 .about {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
+    font-family: 'Raleway', sans-serif;
+}
+section .title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+section .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+section .title::after {
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: #6e6e6e;
+    padding: 0 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+/* About Section Styles */
+.about .about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+}
+.about .about-content .column {
+    flex: 1;
+}
+.about .about-content .left img {
+    width: 80%;
+}
+.about .about-content .right {
+    margin-left: 50px;
+}
+.about .about-content .right .text {
+    font-size: 40px;
+    font-weight: 500;
+}
+.about .about-content .right p {
+    font-size: 20px;
+    margin: 20px 0;
+    color: #6e6e6e;
+    line-height: 1.6;
+}
+.about .about-content .right p:last-child {
+    margin-bottom: 40px;
+}
+.about .about-content .right .btn {
+    background: #3883d3;
+    color: #fff;
+    padding: 12px 36px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+.about .about-content .right .btn:hover {
+    background: #6e6e6e;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .about .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about .about-content .right {
+        margin-left: 0;
+        text-align: center;
+    }
 }

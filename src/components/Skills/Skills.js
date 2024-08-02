@@ -1,42 +1,120 @@
 import React from 'react';
-import './Skills.css';
-
-const skills = [
-    { name: 'JavaScript', percentage: 90 },
-    { name: 'React', percentage: 75 },
-    { name: 'Node.js', percentage: 70 },
-    { name: 'MongoDB', percentage: 65 },
-    { name: 'HTML & CSS', percentage: 95 },
-    { name: 'GitHub', percentage: 90 },
-    { name: 'SQL', percentage: 45 },
-    { name: 'SASS', percentage: 70 },
-    { name: 'Firebase', percentage: 80 },
-    { name: 'Librerías', percentage: 80 },
-    { name: 'Bootstrap', percentage: 80 },
-    { name: 'Visual Studio Code', percentage: 90 },
-    { name: 'Figma', percentage: 70 },
-    { name: 'Photoshop', percentage: 50 },
-
-];
+import './Skills.css'; // Importa el archivo de estilos CSS
 
 const Skills = () => {
-    return (
-        <section className="skills">
-            <h2>Habilidades</h2>
-            <div className="skills-list">
-                {skills.map((skill, index) => (
-                    <div key={index} className="skill">
-                        <p>{skill.name}</p>
-                        <div className="skill-bar">
-                            <div className="skill-level" style={{ width: `${skill.percentage}%` }}>
-                                <span>{skill.percentage}%</span>
-                            </div>
-                        </div>
-                    </div>
-                ))}
+  return (
+    <section className="skills" id="skills">
+      <div className="max-width">
+        <h2 className="title">Mis Habilidades</h2>
+        <div className="skills-content">
+          <div className="column left">
+            <div className="bars">
+              <div className="info">
+                <span>HTML</span>
+                <span>90%</span>
+              </div>
+              <div className="line html"></div>
             </div>
-        </section>
-    );
+            <div className="bars">
+              <div className="info">
+                <span>CSS</span>
+                <span>60%</span>
+              </div>
+              <div className="line css"></div>
+            </div>
+            <div className="bars">
+              <div className="info">
+                <span>JavaScript</span>
+                <span>50%</span>
+              </div>
+              <div className="line js"></div>
+            </div>
+            <div className="bars">
+              <div className="info">
+                <span>React</span>
+                <span>70%</span>
+              </div>
+              <div className="line react"></div>
+            </div>
+            <div className="bars">
+              <div className="info">
+                <span>Node.js</span>
+                <span>70%</span>
+              </div>
+              <div className="line ts"></div>
+            </div>
+            <div className="bars">
+              <div className="info">
+                <span>Librerías</span>
+                <span>80%</span>
+              </div>
+              <div className="line html"></div>
+            </div>
+            <div className="bars">
+              <div className="info">
+                <span>Bootstrap</span>
+                <span>80%</span>
+              </div>
+              <div className="line html"></div>
+            </div>
+          </div>
+          
+          <div className="column right">
+    
+            <div className="bars">
+              <div className="info">
+                <span>MongoDB</span>
+                <span>65%</span>
+              </div>
+              <div className="line html"></div>
+            </div>
+            <div className="bars">
+              <div className="info">
+                <span>GitHub</span>
+                <span>80%</span>
+              </div>
+              <div className="line css"></div>
+            </div>
+            <div className="bars">
+              <div className="info">
+                <span>SQL</span>
+                <span>45%</span>
+              </div>
+              <div className="line js"></div>
+            </div>
+            <div className="bars">
+              <div className="info">
+                <span>Sass</span>
+                <span>60%</span>
+              </div>
+              <div className="line react"></div>
+            </div>
+            <div className="bars">
+              <div className="info">
+                <span>Firebase</span>
+                <span>80%</span>
+              </div>
+              <div className="line ts"></div>
+            </div>
+            <div className="bars">
+              <div className="info">
+                <span>Figma</span>
+                <span>70%</span>
+              </div>
+              <div className="line html"></div>
+            </div>
+            <div className="bars">
+              <div className="info">
+                <span>Photoshop</span>
+                <span>50%</span>
+              </div>
+              <div className="line html"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default Skills;
