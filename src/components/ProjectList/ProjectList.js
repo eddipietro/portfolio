@@ -16,13 +16,13 @@ const projects = [
         link: 'https://eddipietro.github.io/js/'
     },
     {
-        title: 'Proyecto 3',
+        title: 'Fotografia KR',
         imageUrl: 'https://i.postimg.cc/66YGLckp/logo.jpg',
         description: 'Landing Page sobre Fotografía',
         link: 'https://eddipietro.github.io/karenRomeroPH/#'
     },
     {
-        title: 'Proyecto 4',
+        title: 'Tienda Pasta',
         imageUrl: 'https://i.postimg.cc/tJN0W7Ss/logo.jpg',
         description: 'Ecommerce tienda de Pasta',
         link: 'https://dellapasta.netlify.app/#/'
