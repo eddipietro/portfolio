@@ -10,22 +10,22 @@ const projects = [
         link: 'https://cayetana-bazar-deco.netlify.app/'
     },
     {
-        title: 'DellaPasta',
-        imageUrl: 'https://via.placeholder.com/300',
-        description: 'Ecommerce tienda de Pasta',
-        link: 'https://dellapasta.netlify.app/#/'
+        title: 'flynow',
+        imageUrl: 'https://i.postimg.cc/yNMTKj1H/logoflynow.png',
+        description: 'Web sobre turismo en Argentina',
+        link: 'https://eddipietro.github.io/js/'
     },
     {
         title: 'Proyecto 3',
-        imageUrl: 'https://via.placeholder.com/300',
-        description: 'Descripción del Proyecto 3',
-        link: 'http://example.com/proyecto3'
+        imageUrl: 'https://i.postimg.cc/66YGLckp/logo.jpg',
+        description: 'Landing Page sobre Fotografía',
+        link: 'https://eddipietro.github.io/karenRomeroPH/#'
     },
     {
         title: 'Proyecto 4',
-        imageUrl: 'https://via.placeholder.com/300',
-        description: 'Descripción del Proyecto 4',
-        link: 'http://example.com/proyecto4'
+        imageUrl: 'https://i.postimg.cc/tJN0W7Ss/logo.jpg',
+        description: 'Ecommerce tienda de Pasta',
+        link: 'https://dellapasta.netlify.app/#/'
     }
 ];
 
