@@ -25,6 +25,14 @@ const NavBar = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const handleMenuClick = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const handleLinkClick = () => {
+    setMenuOpen(false); // Close menu when a link is clicked
+  };
+
   return (
     <>
       <button className={`scroll-up-btn ${showScrollUpBtn ? 'show' : ''}`} onClick={handleScrollUp}>
@@ -36,13 +44,13 @@ const NavBar = () => {
             <img src="https://i.postimg.cc/g0PZKHWS/home-icon.webp" alt="Logo" />
           </a>
           <ul className={`menu ${menuOpen ? 'active' : ''}`}>
-            <li><a href="#home" className="menu-btn">Home</a></li>
-            <li><a href="#about" className="menu-btn">Sobre Mi</a></li>
-            <li><a href="#skills" className="menu-btn"> Habilidades</a></li>
-            <li><a href="#proyectos" className="menu-tn">Proyectos</a></li>
-            <li><a href="#contact" className="menu-btn">Contacto</a></li>
+            <li><a href="#home" className="menu-btn" onClick={handleLinkClick}>Home</a></li>
+            <li><a href="#about" className="menu-btn" onClick={handleLinkClick}>Sobre Mi</a></li>
+            <li><a href="#skills" className="menu-btn" onClick={handleLinkClick}>Habilidades</a></li>
+            <li><a href="#proyectos" className="menu-btn" onClick={handleLinkClick}>Proyectos</a></li>
+            <li><a href="#contact" className="menu-btn" onClick={handleLinkClick}>Contacto</a></li>
           </ul>
-          <button className="menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
+          <button className="menu-btn" onClick={handleMenuClick}>
             <FaBars />
           </button>
         </div>

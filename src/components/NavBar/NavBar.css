@@ -61,14 +61,11 @@
 .navbar .menu li a:hover {
     color: #6e6e6e;
 }
-.navbar .menu-btn {
+.menu-toggle {
     color: #3883d3;
     font-size: 23px;
     cursor: pointer;
     display: none;
-}
-.navbar .menu-btn i.active:before {
-    content: "\f00d";
 }
 
 /* Scroll Up Button */
@@ -99,31 +96,34 @@
     filter: brightness(90%);
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 700px) {
     .navbar .menu {
-        display: none;
-    }
-    .navbar .menu-btn {
-        display: block;
-    }
-    .navbar.active .menu {
-        display: block;
+        display: none; /* Hide menu by default on mobile */
+        flex-direction: column;
         position: absolute;
-        top: 80px;
+        top: 70px;
         left: 0;
         width: 100%;
         background: #6e6e6e;
         padding: 10px 0;
         border-top: 1px solid #fff;
+        transition: transform 0.3s ease;
+        transform: translateY(-100%);
     }
-    .navbar.active .menu li {
+    .navbar .menu.active {
+        display: flex; /* Show menu when active */
+        transform: translateY(0);
+    }
+    .navbar .menu li {
         width: 100%;
         text-align: center;
     }
-    .navbar.active .menu li a {
+    .navbar .menu li a {
         margin-left: 0;
         display: block;
         padding: 10px 20px;
+    }
+    .menu-toggle {
+        display: block; /* Show the menu toggle button */
     }
 }

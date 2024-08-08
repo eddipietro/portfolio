@@ -1,4 +1,3 @@
-
 html {
     scroll-behavior: smooth;
 }
@@ -71,6 +70,7 @@ section .title::after {
 }
 .about .about-content .left img {
     width: 80%;
+    max-width: 400px; /* Ajusta el tamaño máximo de la imagen */
 }
 .about .about-content .right {
     margin-left: 50px;
@@ -107,8 +107,21 @@ section .title::after {
         flex-direction: column;
         align-items: center;
     }
+    .about .about-content .left {
+        text-align: center;
+        margin-bottom: 20px; /* Espaciado inferior para la imagen */
+    }
     .about .about-content .right {
         margin-left: 0;
         text-align: center;
+    }
+    .about .about-content .right .text {
+        font-size: 30px; /* Ajusta el tamaño de la fuente del texto */
+    }
+    .about .about-content .right p {
+        font-size: 18px; /* Ajusta el tamaño de la fuente del párrafo */
+    }
+    .about .about-content .right .btn {
+        padding: 10px 30px; /* Ajusta el tamaño del botón */
     }
 }

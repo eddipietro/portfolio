@@ -1,3 +1,5 @@
+/* Projects.css */
+
 .project {
     width: 20%; /* Mantiene dos proyectos por fila con un margen */
     margin: 25px 15px; /* Margen superior e inferior para separación vertical */
@@ -36,4 +38,17 @@
 
 .project a:hover {
     color: #111;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 700px) {
+    .project {
+        width: 100%; /* Proyectos ocupan el ancho completo en móviles */
+        margin: 15px 0; /* Ajusta los márgenes en móviles */
+    }
+
+    .project-list {
+        flex-direction: column; /* Distribuye los proyectos en una sola columna */
+        align-items: center; /* Centra los proyectos */
+    }
 }
