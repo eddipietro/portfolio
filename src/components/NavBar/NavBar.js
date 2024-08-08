@@ -32,8 +32,8 @@ const NavBar = () => {
       </button>
       <nav className={`navbar ${isSticky ? 'sticky' : ''} ${menuVisible ? 'visible' : ''}`}>
         <div className="max-width">
-          <a href="#" className="logo">
-            <img src="icon.png" alt="Logo" />
+          <a href="#home" className="logo">
+            <img src="https://i.postimg.cc/g0PZKHWS/home-icon.webp" alt="Logo" />
           </a>
           <ul className={`menu ${menuOpen ? 'active' : ''}`}>
             <li><a href="#home" className="menu-btn">Home</a></li>

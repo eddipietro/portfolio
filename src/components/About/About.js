@@ -8,7 +8,7 @@ const About = () => {
     const [currentPhrase, setCurrentPhrase] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
     const [text, setText] = useState('');
-    const [typingSpeed, setTypingSpeed] = useState(100); // Cambia la velocidad aquí
+    const [typingSpeed] = useState(100); // Cambia la velocidad aquí
 
     useEffect(() => {
         const handleTyping = () => {
