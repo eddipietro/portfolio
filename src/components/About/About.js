@@ -42,7 +42,7 @@ const About = () => {
                     </div>
                     <div className="column right">
                         <div className="text">Me llamo Erika Di Pietro y soy <span className="typing">{text}</span></div>
-                        <p>¡Hola! Soy Erika Di Pietro, una apasionada desarrolladora web Full Stack Junior, recientemente llegada a España desde Argentina. Con una sólida formación en programación, estoy emocionada por iniciar mi carrera profesional aquí y enfrentar desafíos que me permitan crecer y aprender. A pesar de mi falta de experiencia laboral, estoy lista para demostrar mi capacidad y contribuir de manera significativa en proyectos innovadores.
+                        <p>¡Hola! Soy Erika Di Pietro, desarrolladora web Full Stack Junior con un enfoque fuerte en Front End. Recientemente me trasladé a España desde Argentina y estoy emocionada por aplicar mis conocimientos en programación y diseño web para desarrollar experiencias digitales únicas. Estoy comprometida con mi crecimiento profesional y lista para contribuir a proyectos que impulsen la innovación.
 
 
 
