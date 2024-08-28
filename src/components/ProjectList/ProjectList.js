@@ -22,10 +22,10 @@ const projects = [
         link: 'https://eddipietro.github.io/karenRomeroPH/#'
     },
     {
-        title: 'Tienda Pasta',
-        imageUrl: 'https://i.postimg.cc/tJN0W7Ss/logo.jpg',
-        description: 'Ecommerce tienda de Pasta',
-        link: 'https://dellapasta.netlify.app/#/'
+        title: 'Juego del Ahorcado',
+        imageUrl: 'https://i.postimg.cc/MG95rmvs/6.jpg',
+        description: 'Juego del Ahorcado',
+        link: 'https://eddipietro.github.io/ahorcado/'
     }
 ];
 
